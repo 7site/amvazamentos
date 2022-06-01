@@ -1,0 +1,64 @@
+body {
+    background-color:white;
+}
+
+.ultima {
+    font-size: 30px;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#letreiro {
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h4{
+    float: left;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.cards{
+  perspective: 500px;
+  margin-bottom: 15%;
+  margin-right: 10%;
+
+}
+.card{
+  float:right;
+  width: 400px;
+  height: 200px;
+  background: url('./logo.png')
+  center no-repeat;
+  background-size: cover;
+  border: 8px solid
+  rgba(red, green, blue, alpha);
+  border-radius: 10px;
+  position:relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform .5s;
+}
+.card:hover{
+  transform: translateZ(10px)
+  rotateX(20deg) rotateY(30deg);
+}
+
+.card-title{
+  color: black;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  transform: translateY(-50%);
+  transition: transform .5s;
+}
+.card:hover .card-title{
+  transform: translateZ(50px);
+}

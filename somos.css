@@ -1,0 +1,166 @@
+body {
+    --bg-clr: #fff;
+    background-color: var(--bg-clr);
+}
+
+
+
+
+
+#menu-k {
+    list-style: none;
+    padding: 0;
+    background-color: black;
+    font-size: x-large;
+
+}
+
+#menu-k li {
+    display: inline;
+
+}
+
+#menu-k li a {
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu-k li a:hover {
+    background-color: red;
+}
+
+/*azul vermelho amarelo*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background-color: #000;
+    transition: .3s;
+    overflow: hidden;
+}
+
+
+.box:hover {
+    transform: translateY(-15px);
+}
+
+
+
+.box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    transform: rotate(-40deg) translateY(-100px);
+    background: linear-gradient(to right, #ffff00, #ffff00);
+
+}
+
+
+
+
+
+
+
+
+.box:hover:after {
+    animation: border-effect 1.2s ease;
+}
+
+@keyframes border-effect {
+    0% {
+        transform: rotate(-40deg) translate(-100px);
+    }
+
+    100% {
+        transform: rotate(-40deg) translate(-530px);
+    }
+}
+
+
+
+
+.text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000080;
+    width: 295px;
+    height: 415px;
+    z-index: 10;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+
+.box-two::after {
+    background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.box-tree::after {
+    background: linear-gradient(to right, #dce35b, #45b649);
+    display: inline-block;
+}
+
+
+
+
+
+
+.img-wrapper {
+       max-width: 150px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.img-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border: 6px solid var(--bg-clr);
+    border-top-color: #000080;
+    border-bottom-color: #000080;
+    border-radius: 50%;
+    z-index: -1;
+    animation: spin 3s linear infinite;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
