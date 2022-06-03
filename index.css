@@ -45,25 +45,27 @@ h3 {
     margin: auto 40px auto 40px;
 }
 
-
+.card {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
 
 .duvida {
-    text-align: center;
+    
     margin-bottom: 30px;
-    margin-left: 25%;
+    margin-left: 30px;
+    padding-left: 20px;
     padding-right: 30px;
     padding-top: 30px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card {
-    margin-left: 30px;
-    margin-top: 5px;
-}
+
 
 .achamos {
-    text-align: center;
+    
     margin-bottom: 30px;
     margin-top: 30px;
     margin-left: 25%;
@@ -72,4 +74,15 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media (max-width:510px) {
+    .card{
+    width: 90%;
+    height: auto;
+}
+}
+@media (max-width:425px){
+.duvida{
+    text-align:center;
+}
+}
 /*azul vermelho amarelo*/
