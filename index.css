@@ -67,9 +67,10 @@ h3 {
 .achamos {
     
     margin-bottom: 30px;
-    margin-top: 30px;
-    margin-left: 25%;
-    margin-right: 30px;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 30px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -86,9 +87,11 @@ h3 {
 }
 }
 
+
 @media (max-width:425px){
-.achamos{
-    text-align:center;
-}
-}
+    .achamos{
+        text-align:center;
+    }
+    }
+
 /*azul vermelho amarelo*/
