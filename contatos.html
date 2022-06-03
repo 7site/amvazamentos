@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="quem somos.html">
+                    <a href="somos.html">
                         Quem somos ?
                     </a>
                 </li>
@@ -57,52 +57,38 @@
     </div>
     <hr />
     <br/>
-    <section class="form">
-        <div class="field">
-            <label class="label">Nome</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="digite seu 1º nome">
-            </div>
-        </div>
+    
+    <section>
+        <form method="post" action="mailto:davirv21@gmail.com">
+        <label for="name"> 
+            Nome
+        </label>
+            <input type="text" id="name" placeholder="insira seu 1º nome" name="nome" required>
+                <br>
+                <br>
+        <label for="email">
+            E-mail
+        </label>
+            <input type="email" id="email" placeholder="seu melhor E-mail" name="email" required>
+                <br>
+                <br>
+                
+                <br>
+                <label for="campo"> 
+                    Preencha o campo
+                </label>
         <br/>
-        <div class="field">
-            <label class="label">Sobrenome</label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" placeholder="digite seu sobrenome">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                </span>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                </span>
-            </div>
-             </div>
-             <br/>
-        <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="email" placeholder="Email input" value="insira seu e-mai">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                </span>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </span>
-            </div>
-          </div>
-          <br/>
-        <div class="field">
-            <label class="label">Menssagem</label>
-            <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
-            </div>
-        </div>
-        <br/>
-        <div class="field is-grouped">
-            <div class="control">
-                <button class="button is-link">Enviar</button>
-            </div>
-        </div>
+        <textarea name="mensagem"  placeholder="Nos conte o que está acontecendo?" required></textarea>
+        
+                <br>
+                <br>
+            <input type="submit" name="submit" value="Enviar">
+            <input type="reset">
+            
+    </form>
+     
+                
+ 
     </section>
     <br/>
     <hr />
@@ -114,11 +100,11 @@
     </div>
     <div>
         <center>
-            <a href="">
+            <a href="https://www.instagram.com/">
                 <img src="https://topfashionrio.com.br/wp-content/uploads/2022/03/story_25_6005de866bcf5.gif"
                     width="100" height="100" hspace="50">
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/">
                 <img src="https://cliply.co/wp-content/uploads/2021/08/372108180_WHATSAPP_ICON_400.gif" width="100"
                     height="100" hspace="50">
             </a>
