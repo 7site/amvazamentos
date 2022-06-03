@@ -2,13 +2,33 @@ body {
     background-color:white;
 }
 
+
 .ultima {
     font-size: 30px;
-    padding-left: 30px;
+    padding-left: 20%;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+
+
+.servi{
+  
+  margin-top: 20px;
+  padding-left: 5%;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.li{
+  float: left;
+  margin-top: 20px;
+  padding-left: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 #letreiro {
     color: whitesmoke;
@@ -17,11 +37,6 @@ body {
     
 }
 
-h4{
-    float: left;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 
 
@@ -29,12 +44,12 @@ h4{
   perspective: 500px;
   margin-bottom: 15%;
   margin-right: 10%;
-
+  margin-left: 10%;
 }
 .card{
   float:right;
-  width: 400px;
-  height: 200px;
+  width: 350px;
+  height: 180px;
   background: url('./logo.png')
   center no-repeat;
   background-size: cover;
@@ -61,4 +76,14 @@ h4{
 }
 .card:hover .card-title{
   transform: translateZ(50px);
+}
+
+
+@media (max-width:510px) {
+  .cards{
+  width: 96%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 }
