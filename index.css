@@ -85,4 +85,10 @@ h3 {
     text-align:center;
 }
 }
+
+@media (max-width:425px){
+.achamos{
+    text-align:center;
+}
+}
 /*azul vermelho amarelo*/
